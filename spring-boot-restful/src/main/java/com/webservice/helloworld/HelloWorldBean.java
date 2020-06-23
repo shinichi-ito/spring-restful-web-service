@@ -1,4 +1,4 @@
-package com.webservice;
+package com.webservice.helloworld;
 
 public class HelloWorldBean {
 	private String message;
