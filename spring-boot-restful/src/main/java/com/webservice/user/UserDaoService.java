@@ -15,16 +15,16 @@ public class UserDaoService {
 		users.add(new User(2, "Kimura", new Date()));
 		users.add(new User(3, "Yamada", new Date()));
 	}
-	public List<User> findAll() {
-		return users;
-	}
 	
-	public User save(User user) {
-		if(user.getId()==null) {
+	public User saveData(User user) {
+		if (user.getId() == null) {
 			user.setId(++usersCount);
 		}
 		users.add(user);
 		return user;
+	}
+	public List<User> findAll() {
+		return users;
 	}
 		public User findOne(int id) {
 			for(User user:users) {
